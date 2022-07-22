@@ -66,7 +66,7 @@ function addReposToCard(repos) {
             const repoEl = document.createElement('a')
             repoEl.classList.add('repo')
             repoEl.href = repo.html_url
-            repoEl.target = '_blank' //repoEl là element mà sự kiện đó diễn ra.
+            repoEl.target = '_blank' //repoEl là element mà sự kiện đó diễn ra. _blank: mở tài liệu được liên kết trong một cửa sổ hoặc tab mới.
             repoEl.innerText = repo.name
             reposEl.appendChild(repoEl)
         }
