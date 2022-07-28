@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>Menu Slider & Modal</title>
+</head>
+
+<body>
+    <nav id="nav_bar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/originals/ed/b4/34/edb43452a4d7ed72893756833ee1a62b.jpg" alt="user" width="100" />
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button class="toggle" id="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+        <h1>Chuyện về chú mèo thích viết blog.</h1>
+        <p>
+            Liệu có bộ phận nhân sự nào chấp nhận bản viết blog bằng mông và đuôi của một con mèo?
+        </p>
+        <button class="signup-btn" id="open">Sign Up</button>
+    </header>
+    <div class="container">
+        <img src="https://znews-photo.zingcdn.me/w1920/Uploaded/lce_uxlcq/2020_08_02/ssyqpg0ffk8nbpimrdsl.jpg" alt="Pablo cat" />
+        <h2>Mèo Suki đến từ Canada</h2>
+        <p>
+            Cô mèo bengal mắt xanh này hiện có gần 2 triệu người theo dõi trên Instagram. Cùng với cô chủ Martina Gutfreund và một chú chó Husky, Suki khám phá những khu rừng, đồi núi và không ngại chinh phục những đỉnh núi mới. Suki chủ yếu đi du lịch ở Canada,
+            nhưng đã đến thăm các quốc gia khác như Italy, Luxembourg, Mexico, Mỹ... Các hoạt động ngoài trời yêu thích của Suki là đuổi bắt chim, nhảy đá, đi thuyền và chụp ảnh. Mèo Suki bạo dạn, quen thuộc với thiên nhiên hoang dã, không ngại tiếp cận
+            với nước, mưa và nắng nóng và rất biết tạo dáng chụp ảnh.
+        </p>
+        <p>
+            "Suki là một con mèo thích phiêu lưu nhưng phần lớn thời gian rất lười biếng, không phải là một "nhân viên" giỏi".
+        </p>
+        <h2>Mèo Miến Điện đến từ Mỹ</h2>
+        <p>
+            Một trong những travel blogger mèo nổi tiếng là con mèo có bộ lông nâu và trắng đến từ Mỹ, có tên là Miến Điện, đặt theo giống mèo. Nó được biết đến với biệt danh "Nhà thám hiểm người Myanmar", song đối với người chủ Steven Simmons, Miến Điện còn là một
+            "vị cứu tinh". Simmons là một bác sĩ thú y quân đội mắc chứng PTSD (rối loạn căng thẳng sau sang chấn).
+        </p>
+        <h2>Mèo Bolt và Keel đến từ Canada</h2>
+        <p>
+            Hai anh em mèo Bolt và Keel sống gần các thùng rác cho đến khi gặp người chủ của mình, Kayleen Vander Rea. Câu chuyện diễn ra vào năm 2015, khi Kayleen đi ngang qua các thùng rác và nghe thấy tiếng "meo-meo". Đôi mèo hay được khoác lên mình những bộ trang
+            phục đôi. Những bức ảnh chụp chúng nhận được hàng chục nghìn lượt thích và bình luận trên mạng xã hội.
+        </p>
+    </div>
+    <!--Model-->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="label_Name">Name</label>
+                        <input type="text" name="name" id="label_name" placeholder="Enter Name" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="label_Email">Email</label>
+                        <input type="email" name="email" id="label_Email" placeholder="Enter Email" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="label_Password">Password</label>
+                        <input type="password" id="label_Password" placeholder="Enter Password" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="label_Password2">Confirm Password</label>
+                        <input type="password" id="label_Password2" placeholder="Confirm Password" class="form-input" />
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+nav {
+    background-color: rgba(242, 216, 220, 0.614);
+    border-right: 2px solid white;
+    color: #ebeceb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 200;
+    /*theo toa do X*/
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    height: 130px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 2px solid rgba(236, 153, 153, 0.441);
+    padding: 20px;
+}
+
+nav ul li:first-of-type {
+    border-top: 2px solid rgb(228, 126, 126);
+}
+
+nav ul li a {
+    color: rgb(72, 64, 64);
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-bottom: 3px solid rgb(246, 53, 85);
+    background-color: #ffcfc480;
+}
+
+header {
+    background-color: rgba(242, 216, 220, 0.614);
+    color: rgba(30, 29, 29, 0.744);
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button,
+input[type="submit"] {
+    background-color: rgba(239, 161, 161, 0.588);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(14, 14, 14);
+    cursor: pointer;
+    padding: 8px 12px;
+    font-weight: 30px;
+    text-align: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle {
+    background-color: rgba(245, 39, 128, 0.493);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 0.1rem 0.2rem black;
+}
+
+.signup-btn {
+    padding: 12px 30px;
+    font-size: 20px;
+    background-color: rgba(245, 39, 128, 0.493);
+    box-shadow: 0.025rem 0.1rem 0.2rem black;
+    color: rgba(11, 11, 11, 0.647);
+}
+
+.signup-btn:active {
+    transform: translate(0, 4px);
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+.container h2 {
+    color: rgba(66, 65, 65, 0.848);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container p {
+    color: gray;
+}
+
+.container img {
+    width: 100%;
+}
+
+.modal-container {
+    background-color: rgba(199, 196, 197, 0.486);
+    /*lớp phủ toàn màn hình*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.modal-container.show-modal {
+    display: block;
+}
+
+.modal {
+    background-color: rgba(238, 236, 236, 0.815);
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    /*can giua*/
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    /*căn giữa theo tọa độ x,y*/
+    transform: translate(-50%, -50%);
+    /* độ rộng che phủ lớn nhất là 100%*/
+    max-width: 100%;
+    /*độ rộng của form_modal là 400px so với 100%*/
+    width: 400px;
+}
+
+.modal-header {
+    background: rgba(237, 158, 158, 0.847);
+    color: rgba(30, 29, 29, 0.799);
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    /*căn đều trái, phải,trên, dưới*/
+    padding: 8px;
+    /*độ rộng tương ứng với form_modal*/
+    width: 100%;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 25px;
+    /*vitri co dinh ben phai*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.submit-btn {
+    margin-left: 30%;
+    width: 40%;
+    font-size: 20px;
+}
