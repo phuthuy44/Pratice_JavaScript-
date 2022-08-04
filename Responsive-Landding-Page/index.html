@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./css.css" />
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+
+            <a href="#"><img src="./img/logo.png" class="logo" width="100"><span>Starbucks</span></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee.<br> It's <span>Starbucks</span>.</h2>
+                <p>Hạt cà phê phải trải qua một hành trình dài, với nhiều bước từ gieo trồng, thu hoạch, rang xay...để mang đến tách cà phê bột bạn yêu thích. Mỗi bước trong hành trình này đều đóng vai trò quan trọng để tạo nên hương vị của hạt cà phê, đặc
+                    biệt là thổ nhưỡng và khí hậu tại nơi cây cà phê sinh trưởng.</p>
+                <a href="#">
+                    <p>Learn More</p>
+                </a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="./img/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/instagram.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/twitter.png"></a>
+            </li>
+        </ul>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
