@@ -8,3 +8,4 @@ Live Demo:
 5. Password Generator: https://bom.so/Tx3V6i
 6. Sticky Navigation: https://bom.so/Xz1Rg1
 7. Stop Watch: https://bom.so/5S24Ul
+8. Landing Page - Starbucks: https://bom.so/WFriYn
