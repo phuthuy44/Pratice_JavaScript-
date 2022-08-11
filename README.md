@@ -9,3 +9,4 @@ Live Demo:
 6. Sticky Navigation: https://bom.so/Xz1Rg1
 7. Stop Watch: https://bom.so/5S24Ul
 8. Landing Page - Starbucks: https://bom.so/WFriYn
+9. Coffee-Landingpage: https://bom.so/wZ1qjW

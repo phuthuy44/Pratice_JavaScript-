@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--Header section starts-->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-book"></i>Bo<span>ok.io</span></a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="nav-header-2">
+                <a href="#Home-books">Home</a>
+                <a href="#Featured-books">Featured</a>
+                <a href="#Arrivals-books">Arrivals</a>
+                <a href="#Reviews-books">Reviews</a>
+                <a href="#Blogs-books">Blogs</a>
+            </nav>
+        </div>
+    </header>
+    <!--Header section ends-->
+    <!--bottom nav-->
+    <nav class="bottom-nav">
+        <a href="#Home-books" class="fas fa-home"></a>
+        <a href="#Featured-books" class="fas fa-list"></a>
+        <a href="#Arrivals-books" class="fas fa-tags"></a>
+        <a href="#Reviews-books" class="fas fa-comment"></a>
+        <a href="#Blogs-books" class="fas fa-contact-blogs"></a>
+    </nav>
+    <!--bottom nav ends-->
+    <!--login form-->
+    <div class="login-form-container">
+        <form action="">
+            <div id="close-login-btn" class="fas fa-close"></div>
+            <h3>Sign in</h3>
+            <span>Username</span>
+            <input type="email" class="box" name="" placeholder="Enter your username..." id="">
+            <span>Password</span>
+            <input type="password" class="box" name="" placeholder="Enter your password..." id="">
+            <div class="check-box">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="Sign in" class="btn">
+            <p>Forget password?<a href="#">click here</a></p>
+            <p>Don't have an account ? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+    <!--login from ends-->
+    <!--Home section starts-->
+    <section class="Home-books" id="#Home-books">
+        <div class="row">
+            <div class="content">
+                <h3>Up to 75% off</h3>
+                <p>
+                    Welcome to your friendly neighborhood library. We have more than 50,000 ebooks waitting to be discovered.
+                </p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="./image/book-1.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/book-2.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/book-3.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/book-4.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/book-5.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/book-6.png" alt=""></a>
+                </div>
+                <img src="./image/stand.png" class="stand" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Home section ends-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./Js/script.js"></script>
+
+</html>

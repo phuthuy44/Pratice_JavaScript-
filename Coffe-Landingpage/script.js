@@ -25,8 +25,3 @@ window.onscroll = () => {
     cart.classList.remove('active');
     searchFrom.classList.remove('active');
 }
-document.querySelector('#home-coffee').onclick = () => {
-    cart.classList.remove('active');
-    navbar.classList.remove('active');
-    searchFrom.classList.remove('active');
-}

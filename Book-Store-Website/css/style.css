@@ -1,0 +1,390 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,700;1,100&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+        transition: width none;
+    }
+    
+     :root {
+        --gray: rgb(197, 197, 196);
+        --dark-color: rgba(139, 139, 138, 0.786);
+        --black: #444;
+        --light-color: #666;
+        --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+    
+    section {
+        padding: 2rem 2%;
+    }
+    
+    .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .5rem 3rem;
+        border-radius: .5rem;
+        color: #fff;
+        background: var(--gray);
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    
+    .btn:hover {
+        background: var(--dark-color);
+    }
+    
+    html {
+        width: 100%;
+        font-size: 62, 5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5rem;
+        scroll-behavior: smooth;
+    }
+    
+    html::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    html::-webkit-scrollbar {
+        background: transparent;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background: var(--dark-color);
+    }
+    
+    .header .header-1 {
+        background: #fff;
+        padding: 1.5rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header .header-1 .logo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: var(--dark-color);
+    }
+    
+    .header .header-1 .logo i {
+        color: var(--gray);
+    }
+    
+    .header .header-1 span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: var(--dark-color);
+        text-transform: lowercase;
+    }
+    
+    .header .header-1 .search-form {
+        width: 30rem;
+        height: 3rem;
+        border: 1px solid white;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: .5rem;
+    }
+    
+    .header .header-1 .search-form input {
+        font-size: 1rem;
+        padding: 0 1.2rem;
+        height: 100%;
+        width: 100%;
+        text-transform: none;
+        color: var(--black);
+    }
+    
+    .header .header-1 .search-form label {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        color: var(--black);
+    }
+    
+    .header .header-1 .search-form label:hover {
+        color: var(--gray);
+    }
+    
+    .header .header-1 .icons div,
+    .header .header-1 .icons a {
+        font-size: 1.7rem;
+        margin-left: 1rem;
+        color: var(--dark-color);
+        cursor: pointer;
+    }
+    
+    .header .header-1 .icons div:hover,
+    .header .header-1 .icons a:hover {
+        color: var(--black);
+    }
+    
+    #search-btn {
+        display: none;
+    }
+    
+    .header .header-2 {
+        background: rgb(197, 197, 196);
+        box-shadow: var(--box-shadow);
+    }
+    
+    .header .header-2 .nav-header-2 {
+        text-align: center;
+    }
+    
+    .header .header-2 .nav-header-2 a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        border-right: 1px solid rgba(230, 227, 227, 0.119);
+    }
+    
+    .header .header-2 .nav-header-2 a:hover {
+        color: black;
+        border-right: 1px solid rgba(10, 10, 10, 0.119);
+    }
+    
+    .header .header-2.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    body {
+        height: auto;
+    }
+    
+    .bottom-nav {
+        text-align: center;
+        background-color: var(--gray);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: none;
+    }
+    
+    .bottom-nav a {
+        font-size: 3rem;
+        padding: 2.5rem;
+        color: #fff;
+    }
+    
+    .bottom-nav a:hover {
+        background: var(--dark-color);
+    }
+    
+    .login-form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(2, 2, 2, 0.14);
+        position: fixed;
+        top: 0;
+        right: -105%;
+        z-index: 10000;
+        height: 100%;
+        width: 100%;
+        transition: all .6s ease-out;
+    }
+    
+    .login-form-container.active {
+        right: 0;
+    }
+    
+    .login-form-container form {
+        background: #fff;
+        border: 1px solid white;
+        width: 40rem;
+        height: auto;
+        padding: 1rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        margin: 2rem;
+    }
+    
+    .login-form-container form h3 {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        color: #444;
+        text-align: center;
+    }
+    
+    .login-form-container form span {
+        display: block;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    
+    .login-form-container form .box {
+        margin: .3rem 0;
+        font-size: 1.2rem;
+        border: 1px solid rgba(102, 102, 102, 0.416);
+        border-radius: .5rem;
+        padding: 1rem 1.2rem;
+        width: 100%;
+        text-transform: none;
+    }
+    
+    .login-form-container form .check-box {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: 1rem 0;
+    }
+    
+    .login-form-container form .check-box label {
+        font-size: 1.2rem;
+        color: var(--light-color);
+        cursor: pointer;
+    }
+    
+    .login-form-container form .btn {
+        text-align: center;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    
+    .login-form-container form p {
+        padding-top: .8rem;
+        color: var(--light-color);
+        font-size: 1.2rem;
+    }
+    
+    .login-form-container form p a {
+        color: var(--gray);
+        text-decoration: underline;
+    }
+    
+    .login-form-container form #close-login-btn {
+        position: relative;
+        right: -93%;
+        top: -2%;
+        width: 28px;
+        text-align: center;
+        font-size: 3rem;
+        color: #444;
+    }
+    
+    .Home-books {
+        background: url("../image/banner-bg.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Home-books .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .Home-books .row .content {
+        flex: 25rem;
+    }
+    
+    .Home-books .row .books-slider {
+        flex: 1 1 40rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .Home-books .row .books-slider a img {
+        height: 20rem;
+    }
+    
+    .Home-books .row .books-slider a:hover img {
+        transform: scale(.9);
+    }
+    
+    .Home-books .row .books-slider .stand {
+        width: 100%;
+        margin-top: -2rem;
+    }
+    
+    .Home-books .row .content h3 {
+        color: var(--black);
+        font-size: 3.5rem;
+    }
+    
+    .Home-books .row .content p {
+        color: var(--light-color);
+        font-size: 1rem;
+        line-height: 2;
+        padding: 1rem 0;
+    }
+    /*media queries*/
+    
+    @media(max-width: 991px) {
+        html {
+            font-size: 55%;
+        }
+        .header .header-1 {
+            padding: 2rem;
+        }
+        section {
+            padding: 3rem 2rem;
+        }
+    }
+    
+    @media(max-width:768px) {
+        html {
+            scroll-padding-top: 0;
+        }
+        body {
+            padding-bottom: 6rem;
+        }
+        .header .header-2 {
+            display: none;
+        }
+        .bottom-nav {
+            display: block;
+        }
+        .header .header-1 {
+            box-shadow: var(--box-shadow);
+            position: relative;
+        }
+        #search-btn {
+            display: inline-block;
+        }
+        .header .header-1 .search-form {
+            position: absolute;
+            border-radius: 2px;
+            top: 105%;
+            right: 2rem;
+            width: 90%;
+            box-shadow: var(--box-shadow);
+            transform: scaleY(0);
+            transform-origin: top;
+        }
+        .header .header-1 .search-form.active {
+            transform: scaleY(1);
+        }
+        .Home-books .row .content {
+            text-align: center;
+        }
+        .Home-books .row .content h3 {
+            font-size: 3.5rem;
+        }
+    }
+    
+    @media(max-width:450px) {
+        html {
+            font-size: 50%;
+        }
+    }
