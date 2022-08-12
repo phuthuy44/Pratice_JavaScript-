@@ -281,15 +281,16 @@ html {
 .header-3 .cart-items-container {
     position: absolute;
     top: 100%;
-    right: -105%;
+    right: 0;
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: rgba(126, 125, 125, 0.553);
     padding: 0 1.5rem;
+    display:none
 }
 
 .header-3 .cart-items-container.active {
-    right: 0;
+    display:block;
 }
 
 .header-3 .cart-items-container .cart-item {
