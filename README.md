@@ -11,4 +11,4 @@ Live Demo:
 8. Landing Page - Starbucks: https://bom.so/WFriYn
 9. Coffee-Landingpage: https://bom.so/wZ1qjW
 10. Books-Landingpage: https://bom.so/KqC66P
-11. Plant-Landingpage: https://bom.so/4JBqEx
+11. Plant-Landingpage: https://bom.so/kqAMPv
